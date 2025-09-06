@@ -11,8 +11,6 @@ def decode_lsb(image_path):
             binary_message += str(r & 1)
             binary_message += str(g & 1)
             binary_message += str(b & 1)
-
-    # Tách thành nhóm 8 bit
     byte_chunks = [binary_message[i:i+8] for i in range(0, len(binary_message), 8)]
     data_bytes = bytearray()
 

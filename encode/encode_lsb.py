@@ -5,7 +5,7 @@ def encode_lsb(input_image, output_image, secret_message):
     img = Image.open(input_image).convert('RGB')
     pixels = img.load()
 
-    # Chuyển thông điệp thành nhị phân + dấu NULL kết thúc
+    # Chuyển thông điệp thành nhị phân 
     binary_message = ''.join(format(ord(ch), '08b') for ch in secret_message) + '00000000'
     msg_len = len(binary_message)
     width, height = img.size
