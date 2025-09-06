@@ -33,7 +33,7 @@ print("Tin đã giải mã:", decoded_message)
 
 # 3. Phân tích RS
 print("\n[3] Phân tích RS ...")
-rs_analysis_attack(cover_image, cover_image, block_size=8, threshold=25)
+rs_analysis_attack(cover_image, stego_image, block_size=8, threshold=25)
 
 
 
